@@ -1,0 +1,56 @@
+
+/* -------------------------------
+		Algunas Custom Properties
+	------------------------------ */
+	h1{
+		text-align: center;
+	}
+	h2 {
+		font-size:2rem;
+		text-align: center;
+		margin-bottom: 1em;
+		color: rgb(125, 125, 125);
+		margin-top: 1em;
+		
+	}
+
+	/*Medidas de la tabla responsive para adaptarse a telefonos moviles y pantallas mas pequeñas*/
+	table.width200,table.rwd_auto {border:1px solid rgb(209, 209, 209);width:100%;margin:0 0 50px 0; border-collapse: collapse; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+		.width200 th,.rwd_auto th {background:#02a282;;padding:5px;text-align:center;   font-family: 'Comfortaa', cursive;  color: white;}
+		.width200 td,.rwd_auto td {border-bottom:1px solid rgb(0, 0, 0);padding:5px;text-align:center;   font-family: 'Comfortaa', cursive; background-color: #e5f1f4; color:rgb(125, 125, 125);}
+		.width200 tr:last-child td, .rwd_auto tr:last-child td{border:0}
+	/*Colores del apartado de solicitar, entrega en la tabla*/
+	td a .fa-solid{color: #EF9001; transition: .4s ease-out;}
+	td a .solicitud{color: #EF9001; transition: .4s ease-out;}
+	td a .solicitud:hover{color: #b16a00;}
+	td a .entrega{color: #EF9001; transition: .4s ease-out;}
+	td a .entrega:hover{color: #02a282;}
+	td a .fa-ban:hover{color: rgb(249, 72, 72);}
+	td a .fa-trash-can:hover{color: rgb(249, 72, 72);}
+	td a .fa-pen-to-square:hover{color: #02a282;}	
+	.rwd {width:100%;overflow:auto;}
+		.rwd table.rwd_auto {width:auto;min-width:100%}
+			.rwd_auto th,.rwd_auto td {white-space: nowrap;}
+	/*Media query para hacer responsive la tabla teniendo su máximo de 900 pixeles*/
+	@media only screen and (max-width: 900px) 
+	{
+	
+		table.width200, .width200 thead, .width200 tbody, .width200 th, .width200 td, .width200 tr { display: block; }
+		
+		.width200 thead tr { position: absolute;top: -9999px;left: -9999px; }
+		
+		.width200 tr { border: 1px solid rgb(0, 0, 0); background: #ffffff; font-size: 0.8rem;}
+		
+		.width200 td { border: none;border-bottom: 1px solid rgb(0, 0, 0); position: relative;padding-left: 50%;text-align:left }
+		
+		.width200 td:before {  position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;}
+		/*Medidas de width para el cambio de posicion de estos titulos en la tabla responsive*/
+		.width200 td:nth-of-type(1):before { content: "ID"; }
+		.width200 td:nth-of-type(2):before { content: "NOMBRE"; }
+		.width200 td:nth-of-type(3):before { content: "DESCRIPCIÓN"; }
+		.width200 td:nth-of-type(4):before { content: "CONDICIÓN"; }
+		.width200 td:nth-of-type(5):before { content: "CANTIDAD"; }
+		
+		.descarto {display:none;}
+		.fontsize {font-size:10px}
+	}

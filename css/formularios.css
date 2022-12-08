@@ -1,0 +1,244 @@
+/*Fonts de google para las letras*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Body con sus fonts y colores*/
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #455a64;
+    line-height: 1.5;
+}
+/*Contenedor con sus dimensiones*/
+.contenedorp {
+  max-width: 1170px;
+  margin: 0 auto 1rem;
+  padding: 1.5rem;
+  
+
+  
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(69, 90, 100, 0.7);
+  border-radius: 5px;
+}
+/*Forma de hacerlo responsive para pantallas con minimo de 700px*/
+@media screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.servicios {
+  list-style: none;
+  text-align: center;
+}
+/*Forma de hacerlo responsive para pantallas con minimo de 700px*/
+@media screen and (min-width: 700px) {
+  .servicios {
+    text-align: left;
+  }
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/*Forma de hacerlo responsive para pantallas con minimo de 700px*/
+@media screen and (min-width: 700px) {
+  .info-empresa h3 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+}
+/*Colores de algunas letras*/
+.nombre-empresa {
+  color: #263137;
+}
+
+.contactop {
+  padding: 1rem;
+  background-color: #eaeff1;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.contactop h2 {
+    font-size:1.5rem;
+	text-align: center;
+    color: rgb(125, 125, 125);
+    margin-bottom: 1.5rem;
+}
+.formulariop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.25rem;
+  font-family: 'Comfortaa'
+  
+}
+
+/*Maximo de ancho que tiene la pantalla responsive */
+@media screen and (max-width: 640px) {
+  .formulariop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    display: block;
+  }
+  .contenedorp {
+
+    margin: 0 auto 0.4rem;
+    padding: 0.2rem;
+  
+  }
+  .formulariop button,
+.formulariop input,
+.formulariop textarea {
+  
+  padding: 0.2rem;
+  
+}
+}
+
+.formulariop label {
+  display: block;
+}
+.formulariop button,
+.formulariop input,
+.formulariop textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccd7dc;
+  display: block;
+}
+.formulariop textarea {
+  resize: none;
+}
+
+.full {
+  grid-column: 1/3;
+}
+
+.boton-enviar {
+  background-color: #02a282;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  transition: .3s ease-out;
+  cursor: pointer;
+}
+/*Botones de enviar con su hover para que al poner el cursor encima se cambie de color*/
+.boton-enviar:focus, .boton-enviar:hover {
+  background-color: #18a362;
+  color: #ffb23e;
+  outline: 0;
+  
+}/*# sourceMappingURL=perfil.css.map */
+.bloque{
+  display: block;
+}
+/*FOTO*/
+.foto{
+  margin-left: 500px;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+}
+
+
+
+/* comentarios */
+
+textarea{
+  display: block;
+  background-color: #ccd7dc;
+  margin-left:53.5%;
+  width: 100%;
+  height: 75%;
+  outline: none;
+  font-size: 1rem;
+}
+/*Apartado para poner los comentaarios al momento de rechazar la solicitud*/
+.btn-comentario{
+  display: block;
+  background-color: #02a282;
+  margin-top: 40%;
+  margin-left:-50%;
+  cursor: pointer;
+  transition: 0.4s;
+  color:#fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/*hover de la parte de usuario para el cambio de color al pasar el cursor*/
+.btn-comentario:hover{
+  background-color: #18a362;
+}
+
+p select{
+  background-color: #939393;
+  padding: 15px;
+  color: #fff;
+  width: 100%;
+  border-radius:10px;
+  border: none;
+}
+/*Busqueda de ususario*/
+#busqueda, #busqueda_usuario{
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+  background-color: #cecfcf;
+  color: #4d4e4f;
+  font-size: 1rem;
+  border: none;
+}
+.busqueda{
+  margin-bottom: 10px ;
+}
+.busqueda input{
+  padding: 10px;
+  background-color: #cecfcf;
+  color: #4d4e4f;
+  font-size: 1rem;
+  border-radius:10px;
+  border: none;
+}
+/*Select del apartado de busqueda */
+.busqueda select{
+  background-color: #02a282;
+  padding: 10px;
+  color: #fff;
+  border-radius:10px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/*boton de busqueda nuevo y administrar*/
+.busqueda button{
+  background-color: #fe9800;
+  padding: 10px;
+  color: #e7e7e7;
+  border-radius:10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+/*Para que al momento de poner el cursor por encima cambie de color*/
+.busqueda button:hover{
+  background-color: #d47f00;
+  color: #fff;
+}
+

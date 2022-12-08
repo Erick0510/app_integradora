@@ -1,0 +1,83 @@
+/* -------------------------------
+			Google Fonts
+	------------------------------ */
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Josefin+Sans:wght@700&display=swap');
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(190, 190, 190);
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contenedor-principal{
+    display: grid;
+    grid-template-columns: 10fr 50fr 10fr;
+    grid-template-rows: minmax(30em, min-content);
+    grid-template-areas: 
+    '. solicitud .';
+}
+.contenido{
+    padding: 7em;
+    margin-top: 4rem;
+    grid-area: solicitud;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.contenedor-bienvenida{
+    display: grid;
+    place-items: center;
+}
+.contenedor-bienvenida h1{
+    color: rgb(110, 110, 110);
+}
+
+/* -------------------------------
+			CATALOGO
+	------------------------------ */
+.btn-acciones{
+    text-decoration: none;
+    transition: ease all .3s;
+    color: #EF9001;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.btn-acciones:hover{
+    
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.list-new{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.list-new .li-contenido a{
+    color: rgb(217, 217, 217);
+    padding: 1em;
+    text-decoration: none;
+    background-color: #EF9001;
+    transition: .6s ease-out;
+}
+.list-new .li-contenido a:hover{
+
+    background-color: rgb(191, 120, 14);
+    color: white;
+}
+.titulo-bienvnida{
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:660px){
+    .btn-catalogo{
+        font-size: 0.8rem;
+    
+    }
+    .list-new .li-contenido a{
+        padding: 1em;
+        font-size: 0.8em;
+    }
+}
